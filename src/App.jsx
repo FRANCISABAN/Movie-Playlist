@@ -1,121 +1,64 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import './style.css'
+import bw from './assets/BW.jpeg'
+import ls from './assets/LS.jpeg'
+import mh from './assets/MH.jpg'
+import lotr from './assets/Lord of the Rings.jpg'
+import up from './assets/up.jpg'
+import flash from './assets/flash.jpg'
+import legend from './assets/the legends.jpg'
+import wood from './assets/wood.jpg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="page" id="home">
+      <div className="container">
+        <header>
+          <h2>METFLIX</h2>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#my-list">My List</a>
+          </nav>
+        </header>
 
-      <div className="ticks"></div>
+        <h1 id="my-list">My List</h1>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
+        <div className="movies" id="movies">
+          <div className="movie">
+            <img src={bw} alt="Black Widow" />
+            <p>Black Widow</p>
+          </div>
+          <div className="movie">
+            <img src={ls} alt="Love Story" />
+            <p>Love Story</p>
+          </div>
+          <div className="movie">
+            <img src={mh} alt="Monster House" />
+            <p>Monster House</p>
+          </div>
+          <div className="movie">
+            <img src={lotr} alt="The Lord of the Rings" />
+            <p>The Lord of the Rings</p>
+          </div>
+          <div className="movie">
+            <img src={up} alt="Up" />
+            <p>Up</p>
+          </div>
+          <div className="movie">
+            <img src={flash} alt="The Flash" />
+            <p>The Flash</p>
+          </div>
+          <div className="movie">
+            <img src={legend} alt="The Legend" />
+            <p>The Legend</p>
+          </div>
+          <div className="movie">
+            <img src={wood} alt="Wood" />
+            <p>Wood</p>
+          </div>
         </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+      </div>
+    </div>
   )
 }
 

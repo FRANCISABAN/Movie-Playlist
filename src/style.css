@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background: lightgray;
+  color: white;
+}
+
+.page {
+  padding: 8px;
+}
+
+.container {
+  background: #222;
+  min-height: 95vh;
+}
+
+header {
+  padding: 10px;
+}
+
+header h2 {
+  color: red;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 20px 10px;
+  font-size: 24px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 10px 10px;
+}
+
+.movie {
+  width: 150px;
+}
+
+.movie:nth-child(2n) {
+  margin-top: 13px;
+  margin-right: 7px;
+}
+
+.movie:nth-child(3n) {
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+}
+
+.movie p {
+  margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .movie {
+    width: calc(50% - 10px);
+  }
+}
