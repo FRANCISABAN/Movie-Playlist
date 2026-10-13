@@ -1,4 +1,5 @@
 import './style.css'
+import background from './assets/background.png'
 import bw from './assets/BW.jpeg'
 import ls from './assets/LS.jpeg'
 import mh from './assets/MH.jpg'
@@ -9,8 +10,14 @@ import legend from './assets/the legends.jpg'
 import wood from './assets/wood.jpg'
 
 function App() {
+  
+  const pageStyle = {
+    backgroundImage:
+      'linear-gradient(rgba(5, 9, 18, 0.25), rgba(5, 9, 18, 0.65)), url(' + background + ')',
+  }
+
   return (
-    <div className="page" id="home">
+    <div className="page" id="home" style={pageStyle}>
       <div className="container">
         <header>
           <h2>METFLIX</h2>
